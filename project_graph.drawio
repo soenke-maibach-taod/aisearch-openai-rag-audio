@@ -6,8 +6,26 @@
 <mxCell id="1" parent="0"/>
 
 <!-- Frontend Components -->
-<mxCell id="2" value="Frontend&#xa;(React + TypeScript)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-<mxGeometry x="320" y="40" width="160" height="60" as="geometry"/>
+<mxCell id="2" value="Frontend&#xa;(React + TypeScript)&#xa;- Vite Build System&#xa;- TailwindCSS Styling&#xa;- i18n Translations&#xa;- WebSocket Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+<mxGeometry x="320" y="40" width="160" height="100" as="geometry"/>
+</mxCell>
+
+<!-- Frontend Sub-Components -->
+<mxCell id="21" value="UI Components&#xa;- Button&#xa;- Card&#xa;- Status Message&#xa;- Grounding Files&#xa;- History Panel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+<mxGeometry x="120" y="40" width="160" height="100" as="geometry"/>
+</mxCell>
+
+<mxCell id="22" value="Audio Handling&#xa;- Audio Recorder&#xa;- Audio Player&#xa;- Audio Worklet&#xa;- Real-time Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+<mxGeometry x="520" y="40" width="160" height="100" as="geometry"/>
+</mxCell>
+
+<!-- Frontend Connections -->
+<mxCell id="23" value="Uses" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="2" target="21">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+
+<mxCell id="24" value="Uses" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="2" target="22">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
 </mxCell>
 
 <!-- Backend Components -->
