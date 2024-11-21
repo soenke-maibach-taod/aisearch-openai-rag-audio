@@ -19,23 +19,23 @@
         <mxCell id="24" value="Uses" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="2" target="22">
           <mxGeometry width="50" height="50" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Backend Core&#xa;(Python + Quart)&#xa;- WebSocket Handler&#xa;- Environment Config&#xa;- Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="320" y="260" width="160" height="100" as="geometry" />
+        <mxCell id="3" value="Backend Core (Python + Quart)&#xa;- WebSocket Handler&#xa;- Environment Config&#xa;- Authentication&#xa;- Gunicorn Server&#xa;- CORS Handling&#xa;- Container App Integration&#xa;- Azure Identity Management&#xa;- Scaling (1.0 CPU, 2Gi Memory)&#xa;- Min/Max Replicas (1-10)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="320" y="260" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="31" value="RTMiddleTier&#xa;- System Messages&#xa;- Audio Processing&#xa;- Tool Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="520" y="260" width="160" height="80" as="geometry" />
+        <mxCell id="31" value="RTMiddleTier&#xa;- System Messages&#xa;- Audio Processing&#xa;- Tool Management&#xa;- Real-time Audio Pipeline&#xa;- Azure OpenAI Integration&#xa;- WebSocket Message Handler&#xa;- Error Management&#xa;- Voice Model Selection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="32" value="RAG Tools&#xa;- Search Integration&#xa;- Document Processing&#xa;- Vector Operations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="120" y="260" width="160" height="80" as="geometry" />
+        <mxCell id="32" value="RAG Tools&#xa;- Search Integration&#xa;- Document Processing&#xa;- Vector Operations&#xa;- Semantic Search Config&#xa;- Index Management&#xa;- Embedding Processing&#xa;- Storage Integration&#xa;- Vector/Text Query Modes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="4" value="Azure OpenAI&#xa;(GPT-4 Realtime)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="520" y="400" width="160" height="60" as="geometry" />
+          <mxGeometry x="520" y="460" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5" value="Azure AI Search" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="120" y="400" width="160" height="60" as="geometry" />
+          <mxGeometry x="120" y="460" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6" value="Azure Blob Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="520" y="400" width="160" height="60" as="geometry" />
+          <mxGeometry x="120" y="560" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7" value="WebSocket" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3" target="2">
           <mxGeometry width="50" height="50" relative="1" as="geometry" />
