@@ -11,8 +11,16 @@
 </mxCell>
 
 <!-- Backend Components -->
-<mxCell id="3" value="Backend&#xa;(Python + Quart)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-<mxGeometry x="320" y="180" width="160" height="60" as="geometry"/>
+<mxCell id="3" value="Backend Core&#xa;(Python + Quart)&#xa;- WebSocket Handler&#xa;- Environment Config&#xa;- Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+<mxGeometry x="320" y="180" width="160" height="100" as="geometry"/>
+</mxCell>
+
+<mxCell id="31" value="RTMiddleTier&#xa;- System Messages&#xa;- Audio Processing&#xa;- Tool Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+<mxGeometry x="520" y="180" width="160" height="80" as="geometry"/>
+</mxCell>
+
+<mxCell id="32" value="RAG Tools&#xa;- Search Integration&#xa;- Document Processing&#xa;- Vector Operations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+<mxGeometry x="120" y="180" width="160" height="80" as="geometry"/>
 </mxCell>
 
 <!-- Azure Services -->
@@ -33,11 +41,19 @@
 <mxGeometry width="50" height="50" relative="1" as="geometry"/>
 </mxCell>
 
-<mxCell id="8" value="Voice/Text" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3" target="4">
+<mxCell id="33" value="Manages" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3" target="31">
 <mxGeometry width="50" height="50" relative="1" as="geometry"/>
 </mxCell>
 
-<mxCell id="9" value="RAG Queries" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3" target="5">
+<mxCell id="34" value="Uses" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3" target="32">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+
+<mxCell id="8" value="Voice/Text" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="31" target="4">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+
+<mxCell id="9" value="RAG Queries" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="32" target="5">
 <mxGeometry width="50" height="50" relative="1" as="geometry"/>
 </mxCell>
 
