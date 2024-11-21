@@ -31,7 +31,8 @@ Check in `app/backend/ragtools.py`:
 
 Key areas to verify:
 
-'''pythonsearch_tool_schema = {
+'''python
+search_tool_schema = {
 "type": "function",
 "name": "search",
 "description": "REQUIRED: Search the knowledge base before answering..."
