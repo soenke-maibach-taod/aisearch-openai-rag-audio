@@ -14,8 +14,7 @@ Check in `app/backend/rtmt.py`:
 
 Example system message enhancement:
 
-'''
-python
+'''python
 system_message = """You MUST use the search tool for any factual information.
 Do not rely on your general knowledge.
 Always cite sources from the search results."""
@@ -32,8 +31,7 @@ Check in `app/backend/ragtools.py`:
 
 Key areas to verify:
 
-'''
-pythonsearch_tool_schema = {
+'''pythonsearch_tool_schema = {
 "type": "function",
 "name": "search",
 "description": "REQUIRED: Search the knowledge base before answering..."
@@ -52,8 +50,7 @@ Monitor in `app/backend/rtmt.py`:
 
 Debug points:
 
-'''
-python
+'''python
 session["tool_choice"] = "auto" if len(self.tools) > 0 else "none"
 session["tools"] = [tool.schema for tool in self.tools.values()]
 '''
@@ -64,8 +61,7 @@ session["tools"] = [tool.schema for tool in self.tools.values()]
 
 Add logging in `app/backend/rtmt.py`:
 
-'''
-python
+'''python
 logger.debug(f"Tool call received: {item['name']}")
 logger.debug(f"Tool arguments: {args}")
 logger.debug(f"Tool result: {result.to_text()}")
@@ -86,8 +82,7 @@ Check in `app/backend/ragtools.py`:
 
 Key function:
 
-'''
-python
+'''python
 async def search_tool(search_client: SearchClient, ...):
 # Add logging
 logger.debug(f"Search query: {args['query']}")
